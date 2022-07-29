@@ -31,6 +31,7 @@ fetch(url)
     var elem = document.createElement('img');
     var huah = document.createElement('h2');
     var desc = document.createElement('p');
+    var bbtn = document.createElement('button');
     var hreff = document.createElement('a');
     column.setAttribute('class', 'column2');
     card.setAttribute('class', 'card');
@@ -46,11 +47,12 @@ fetch(url)
     huah.setAttribute('class', 'black Audiowide padd-8');
     desc.innerHTML = fullDes;
     desc.setAttribute('class', 'padd-8 Trirong');
+    bbtn.setAttribute('class', 'Trirong green radius-20 blog-btn');
     hreff.setAttribute('href', fullHref);
     hreff.setAttribute('target', '_blank');
     hreff.setAttribute('title', 'Read More '+fullTit);
     hreff.innerHTML = 'More..';
-    hreff.setAttribute('class', 'padd-8 Trirong orange');
+    hreff.setAttribute('class', 'padd-4 Trirong white');
 
     container.appendChild(column);
     column.appendChild(card);
@@ -58,7 +60,8 @@ fetch(url)
     link.appendChild(elem);
     card.appendChild(huah);
     card.appendChild(desc);
-    card.appendChild(hreff);
+    bbtn.appendChild(hreff);
+    card.appendChild(bbtn);
   })
   console.log(data);
 })
