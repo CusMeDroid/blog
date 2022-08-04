@@ -51,8 +51,8 @@ fetch(url)
     hreff.setAttribute('href', fullHref);
     hreff.setAttribute('target', '_blank');
     hreff.setAttribute('title', 'Read More '+fullTit);
-    hreff.innerHTML = 'More..';
-    hreff.setAttribute('class', 'padd-4 Trirong white');
+    hreff.innerHTML = 'More...';
+    hreff.setAttribute('class', 'padd-4 Trirong white size-16');
 
     container.appendChild(column);
     column.appendChild(card);
